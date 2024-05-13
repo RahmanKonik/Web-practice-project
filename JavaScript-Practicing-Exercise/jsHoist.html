@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2> My JavaScript Hoisting Exercise</h2>
+
+    <!--
+        with let, we can not use a variable before it is declared.
+    -->
+
+    <p id="Hoisting"></p>
+
+    <script>
+
+        try{
+            name = "Saahbo";
+            let name = "Nebhbo";
+        }
+        catch(err){
+            document.getElementById("Hoisting").innerHTML = err;
+        }
+    </script>
+</body>
+</html>
