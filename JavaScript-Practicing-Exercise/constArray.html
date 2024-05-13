@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2> My JavaScript Const Array Exercise</h2>
+
+    <strong><p id="array"></p></strong>
+
+    <script>
+
+        /*
+
+        // create a const array.
+        const demoArray = ["Volvo", "Tesla", "BMW"];
+
+        // change an element.
+        demoArray[1] = "Audi";
+
+        // add an element.
+        demoArray.push("Tesla");
+
+        // Displaying the all name;
+        document.getElementById('array').innerHTML = demoArray;
+
+        */
+
+        /*
+
+        we can not reassign a const array. TESTING IT IN HERE.'try... catch'
+
+        */
+
+        // create a const array.
+
+        try{
+            // create a const array.
+            const demoArray = ["Volvo", "Tesla", "BMW"];
+
+            // reassign array.
+            demoArray = ["Volvo", "Audi", "BMW"];
+        }
+        catch(err){
+            document.getElementById('array').innerHTML = err;
+        }
+
+
+
+
+    </script>
+</body>
+</html>
