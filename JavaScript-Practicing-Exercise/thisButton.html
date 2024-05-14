@@ -16,7 +16,16 @@
         own element.
     -->
 
-    <button onclick="this.innerHTML = Date()"> Time is ..</button>
+    <button onclick="myDate()"> Time is ..</button>
+
+    <script>
+
+        function myDate(){
+            document.getElementById('date').innerHTML = Date();
+        }
+    </script>
+
+    <p id="date"></p>
 
 </body>
 </html>
