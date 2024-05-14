@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2> My JavaScript Object and Function Exercise</h2>
+
+    <p id="objectFunction"></p>
+
+    <script>
+
+        const person = {
+            firstname: 'Konik',
+            lastName: 'Rahman',
+            id: 44720,
+            fullName: function(){
+                return this.firstname +" "+this.lastName;
+            }
+        }
+
+        //display the information.
+        document.getElementById('objectFunction').innerHTML = person.fullName();
+    </script>
+</body>
+</html>
