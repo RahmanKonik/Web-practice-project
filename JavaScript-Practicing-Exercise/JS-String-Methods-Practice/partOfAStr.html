@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2> javaScript extracting a part of String Exercise</h2>
+
+    <p id="strSlice"></p>
+    <p id="strSlice1"></p>
+    <p id="strUpper"></p>
+    <p id="strConcat"></p>
+
+    <script>
+
+        let text = "Apple, Organe, Banana";
+        let content = "Hi, I am JavaScript Lover";
+
+        let part = text.slice(7, 13); // displaying will be 'organe'
+
+        //displaying it
+        document.getElementById('strSlice').innerHTML = "First test :"+part;
+
+        //displaying after a part
+        document.getElementById('strSlice1').innerHTML = "Second test: "+text.slice(-14);
+        // change the number , 7, then, -14, we can see the different, how do you see the result.
+
+        // same result you can see if you want to use the ,substring(),substr() as same as slice().
+
+
+        // Text, converting the upper to lower, lower to upper, aslo practicing concatentation method
+
+        // upper to lower.
+        document.getElementById('strUpper').innerHTML = "Upper case :"+ content.toUpperCase();
+        // in lower to upper. Just replace the 'toUppercase()' to toLowerCase()
+
+
+        // concatenation.
+        document.getElementById('strConcat').innerHTML = "text and content (concat) :"+ content.concat(" ",text);
+
+        // trim(), use for removeing the space in string. some other method of trim work as same , trimStart()
+        // trimEnd()
+
+    </script>
+</body>
+</html>
