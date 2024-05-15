@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2> My JavaScript String Exercise</h2>
+
+    <p> JavaScript String length methods</p>
+
+    <p id="strLength"></p>
+    <p id="charatStr"></p>
+    <p id="charCodeStr"></p>
+    <p id="atStr"></p>
+
+    <script>
+
+        let text = "My favourite javaScript worlds!";
+
+        let length = text.length;
+
+        document.getElementById('strLength').innerHTML = "length is: " +length;
+
+        // chatAt(position) method.
+        document.getElementById('charatStr').innerHTML = "first char is: " +text.charAt(0);
+
+        // JavaScript charCodeAt().
+
+        document.getElementById('charCodeStr').innerHTML = "first charCode is: " +text.charCodeAt(0);
+
+        // JavaScript At().
+
+        document.getElementById('atStr').innerHTML = "The character is: " +text.at(3);
+
+
+    </script>
+</body>
+</html>
