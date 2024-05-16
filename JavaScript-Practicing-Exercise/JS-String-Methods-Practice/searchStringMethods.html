@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Document</title>
+</head>
+<body>
+
+    <!--
+        String Searching Methods-
+        - indexOf(position);
+        - search();
+        - match();
+        - matchAll();
+        - includes(); boolean result will be given.
+    -->
+
+    <h2>
+        JavaScript String Searching Method Exercise !
+    </h2>
+
+    <p>
+        String searching indexOf, match method.
+    </p>
+
+    <p id="strIndexOf"></p>
+    <p id="strMatch"></p>
+
+    <script>
+
+        let pages = "Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length a paragraph is a group of at least five sentences, a paragraph is half a page long";
+
+        const pages_result = pages.indexOf("paragraphing");// result will be '-1' for not found.
+
+        // if' indexOf('Paragraphs', 10); it mean that, start searching this word after 10 index.
+
+        document.getElementById('strIndexOf').innerHTML = pages_result;
+
+
+        const pages_match_result = pages.match(/graph/gi); // finding this part is exist in any string
+
+        document.getElementById('strMatch').innerHTML = pages_match_result.length + " "+ pages_match_result;
+
+    </script>
+
+</body>
+</html>
