@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2> My JavaScript replace Method</h2>
+
+    <p> It use for replacing any word from a string</p>
+
+    <button onclick="myFunction()">click Me!</button>
+
+    <p id="replacestr">Please visit the microsoft site and microsoft</p>
+
+    <script>
+
+        function myFunction(){
+            let text = document.getElementById('replacestr').innerHTML;
+            //document.getElementById('replacestr').innerHTML = text.replace("microsoft", "w3schools");
+            document.getElementById('replacestr').innerHTML = text.replace(/microsoft/g, "w3schools");
+
+            // try one by one , can see the different.
+
+        }
+    </script>
+</body>
+</html>
