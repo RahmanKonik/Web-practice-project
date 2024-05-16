@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>
+        My JavaScript Split method Exercise
+    </h2>
+
+    <p>
+        Converting a string in a first element array!
+    </p>
+
+    <p id="StrSplit"> </p>
+
+    <p id="textSplitInLine"></p>
+
+    <script>
+
+        let text = "K, O, N, I, K"; // declaring the variable and assign the value.
+        let text_split_result = text.split(",");// Applying the split method with 'comma';
+
+        // displaying the result
+        document.getElementById('StrSplit').innerHTML = text_split_result;
+
+        let content = "KONIK";
+        let content_split_result = content.split("");
+
+        content = "";
+
+        for ( i = 0; i < content_split_result.length; i++){
+
+            content += content_split_result[i] + "<br>"; // STORE the content_split_result[i] character with line break in content variable.
+        }
+
+        // displaying the content
+        document.getElementById('textSplitInLine').innerHTML = content;
+
+    </script>
+</body>
+</html>
