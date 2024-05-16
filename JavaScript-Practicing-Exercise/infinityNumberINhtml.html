@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Numbers Document</title>
+</head>
+<body>
+
+    <!--
+        infinity number will be returned if we calculate a number inside larges number
+    -->
+    <h2> JavaScript Numbers </h2>
+
+    <p id="jsInfinityNumber"> </p>
+
+    <script>
+
+        let myValue = 2;
+        let text = "";
+
+        while ( myValue != Infinity){
+
+            myValue = myValue * myValue;
+
+            text = text + myValue + "<br>";
+        }
+
+        // displaying the result.
+
+        document.getElementById('jsInfinityNumber').innerHTML = text;
+
+    </script>
+
+</body>
+</html>
