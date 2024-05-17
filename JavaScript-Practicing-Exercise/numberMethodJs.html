@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Methods Document</title>
+</head>
+<body>
+
+    <p>
+        Five number methods.- <br>
+
+        - toString <br>
+        - toExponential <br>
+        - toFixed <br>
+        - toPrceision <br>
+        - valueof<br>
+
+         we are going to use first fours.
+    </p>
+
+    <p id="NumberMethods"></p>
+
+    <script>
+
+        let number = 123;
+        let value = 1.56;
+
+        document.getElementById('NumberMethods').innerHTML =
+
+        "toString:- "+number.toString() + "<br>"+ // 123
+        "toExponential- 1:-"+ number.toExponential() + "<br>"+ // 1.23e+2
+        "toExponential- 2:-"+ number.toExponential(4) + "<br>"+//1.2300e+2
+        "toFixed- 1:-"+ value.toFixed() + "<br>"+//2
+        "toFixed- 2:-"+ value.toFixed(2) + "<br>"+// 1.56
+        "toprecision- 1:-"+ value.toPrecision() + "<br>"+ // 1.56
+        "toprecision- 2:-"+ value.toPrecision(2) + "<br>"; // 1.6
+
+    </script>
+
+</body>
+</html>
