@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for adding an element in old array</title>
+</head>
+<body>
+
+
+    <h2> Adding an element in a arrya by using the push method and length property </h2>
+
+    <button onclick="myPushFunction ()"> try it push</button>
+
+    <p id="pushElement"></p>
+
+    <button onclick="myLenFunction ()"> try it length</button>
+
+    <p id="lengthElement"></p>
+
+    <script>
+
+        let cars = ["Tesla", "Volvo", "Audi"];
+        let fruits = ["Apple", "Organe", "banana"];
+
+        document.getElementById('pushElement').innerHTML = cars + ", Is this array? ,"+ Array.isArray(cars);
+
+        document.getElementById('lengthElement').innerHTML = fruits + " , Is this array? ,"+ Array.isArray(fruits);
+
+        // Function to add an element using the push property
+        function myPushFunction(){
+
+            cars.push ("Tata");
+            document.getElementById('pushElement').innerHTML = cars;
+
+        }
+
+        // Function to add an element using the length property
+
+        function myLenFunction(){
+
+            fruits[fruits.length] = "Mango";
+            document.getElementById('lengthElement').innerHTML = fruits;
+
+        }
+
+    </script>
+
+</body>
+</html>
