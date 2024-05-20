@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for loop and Array</title>
+</head>
+<body>
+
+    <h2> My JavaScript Loop and Array Exercise </h2>
+
+    <p id="demoloopArray"></p>
+
+    <p id="demoforArray"></p>
+
+
+    <script>
+
+        const fruits = ["Mango", "Apple", "Organe", "Banana"]; // storing the fruits name in fruits array;
+        let fruits_length = fruits.length; // using the length method to get the length of fruits arrya;
+
+        let text = "<ul>"; // make unorder list in text variable
+
+        for ( let i = 0; i < fruits_length ; i++){
+
+            text += "<li>"+ fruits[i] + "</li>"; // fruit name store in list inside of unorder list
+        }
+
+        text +="</ul>"; // closed the ul tag
+
+        document.getElementById('demoloopArray').innerHTML = text; // display in webpage.
+
+
+        // forEach with function.
+
+        let content = "<ul>";
+        fruits.forEach(myFruits);
+        content += "</ul>";
+
+        document.getElementById('demoforArray').innerHTML = "forEach loop: " + content; // display in webpage.
+
+        function myFruits(element){
+            content +="<li>"+ element + "</li>";
+        }
+
+    </script>
+
+</body>
+</html>
