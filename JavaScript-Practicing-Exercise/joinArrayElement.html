@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for join method</title>
+</head>
+<body>
+
+    <h2> My JavaScript Join method </h2>
+
+    <p id="demoJoinning"></p>
+
+    <p>
+        Popping items out of an array, or pushing items into an array.<br>
+        pop()- last element from array<br>
+        push() - add an element in the end of arrya.
+
+        shift()- remove the first element of array and push the other element in lower index.
+        unshift() - add a new element in the array and push the other element in highest index.
+
+    </p>
+
+    <p id="demoPop"></p>
+    <p id="demoPush"></p>
+    <p id="demoShift"></p>
+
+    <p id="demoUnshift"></p>
+
+    <script>
+
+        let cars = ["Tesla", "Volvo", "Audi"];
+
+        document.getElementById('demoJoinning').innerHTML ="Result of join method: "+ cars.join("*");
+
+        cars.pop();
+
+        document.getElementById('demoPop').innerHTML = cars;
+
+        cars.push("Tata");
+
+        document.getElementById('demoPush').innerHTML = cars;
+
+        cars.shift();
+
+        document.getElementById('demoShift').innerHTML = cars; // result will be - Volvo, Tata
+
+        cars.unshift("Toyota");
+
+        document.getElementById('demoUnshift').innerHTML = cars; // result will be Toyota, Volvo, Tata.
+
+    </script>
+
+</body>
+</html>
