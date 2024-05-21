@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document of concatentation </title>
+</head>
+<body>
+
+    <p> concatentation two array and one string in this Exercise</p>
+
+    <p id="demoConcatentation"></p>
+
+    <script>
+
+        let cars = ["Tesla", "Volvo", "Audi"];
+
+        let fruit = ["Mango", "Apple", "Organe", "Banana"];
+
+        let cars_fruit = cars.concat(fruit);
+
+        document.getElementById('demoConcatentation').innerHTML = " The result of two array: "+ cars_fruit +
+         " <br> and one string in fruits array: "+ fruit.concat("Watermelon");
+
+    </script>
+
+</body>
+</html>
