@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for flat method</title>
+</head>
+<body>
+
+    <p> flat method helps to convert or create an new array from two dimensional array</p>
+
+    <p>The splice() method adds new elements to an array:</p>
+
+    <p id="demoFlat"></p>
+
+    <p id="demoSplice"></p>
+
+    <p id="demosplice"></p>
+
+    <p id="demosplice2"></p>
+
+    <p id="demosplice3"></p>
+
+    <script>
+
+        let numbers = [[1, 2],[3, 4],[5, 6]];
+
+        let cars = ["Tesla", "Volvo", "Audi", "Tata","Kiya"];
+
+        let flat_array = numbers.flat();
+
+        const new_cars = cars.slice(2);
+
+        const slice_cars = cars.slice(1, 3);
+
+        const slice2_cars = cars.slice(3); // start from index 3 element. tata, kiya
+
+
+        document.getElementById('demoFlat').innerHTML = "The result of flat method: "+flat_array; // result will be 1, 2, 3, 4, 5, 6
+
+        cars.splice(2, 0, "Kiv", "Toyta");
+
+        document.getElementById('demoSplice').innerHTML = cars; // result will be tesla,volvo,audi,kiv,toyta
+
+        document.getElementById('demosplice').innerHTML = "the result of silce: "+new_cars;
+
+        document.getElementById('demosplice2').innerHTML = "the result of silce2: "+slice_cars;//volvo, audi
+
+        document.getElementById('demosplice3').innerHTML = "the result of silce3: "+slice2_cars;//tata, kiya
+
+
+
+    </script>
+
+</body>
+</html>
