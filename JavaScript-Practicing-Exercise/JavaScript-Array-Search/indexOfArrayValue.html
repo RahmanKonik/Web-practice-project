@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for array Searching </title>
+</head>
+<body>
+
+    <p> Javascript array Searching</p>
+
+    <p>
+        indexOf and lastindexof is working as same.
+
+        includes(), giving the result in boolean, task is , searching an element in an array.
+
+        find() - it call a function and test the vaule to get the result.
+
+    </p>
+
+    <p id="demoSearching"></p>
+
+    <p id="demoSearchingIncludes"></p>
+
+    <p id="demoFinding"></p>
+
+
+    <script>
+
+        let cars = ["Volvo", "Kiv", "Audi", "BMW"];
+
+        let value = [4, 5,10, 23, 45];
+
+        let search_cars =cars.indexOf("Audi");
+
+        document.getElementById("demoSearching").innerHTML =search_cars; // result will be 2, and if item not found, result will be -1.
+
+        document.getElementById('demoSearchingIncludes').innerHTML = "Is it exists? ,"+cars.includes("Kiv"); // result will be 'true'.
+
+
+        document.getElementById('demoFinding').innerHTML = "The result is : "+ value.find(myValueFunction) + " and position: "+ value.findIndex(myValueIndex); // result will be 23 and position 3
+
+
+        function myValueFunction (value, index, array){
+            return value > 12;
+        }
+
+        function myValueIndex(value, index, array){
+            return value > 12;
+        }
+
+
+
+    </script>
+
+</body>
+</html>
