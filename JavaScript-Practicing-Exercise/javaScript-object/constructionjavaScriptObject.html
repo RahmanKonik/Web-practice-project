@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for javaScript construction Object</title>
+</head>
+<body>
+
+    <p> javaScript construction Object </p>
+
+    <p id="demoConstructionObject"></p>
+
+    <script>
+
+        // construction function for a person object
+
+        function Person(first, last, age, status){
+
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.status = status;
+        }
+
+        // a person object
+        const myName = new Person("Konik", "Rahman", "25", "unmarried");
+
+        // display the information
+
+        document.getElementById('demoConstructionObject').innerHTML = myName.age;
+
+        // try this one, myName.first or myName,last, result will be undefind both. I do not know why this happend.
+
+
+    </script>
+
+</body>
+</html>
