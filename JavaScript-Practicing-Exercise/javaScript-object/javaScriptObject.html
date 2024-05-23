@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for javaScript Object </title>
+</head>
+<body>
+
+    <p> Create a javaScript object and adding the value</p>
+
+    <p id="demoObject"></p>
+
+    <p id="demoLoopObject"></p>
+
+    <script>
+        let person = {
+            firstName: "Konik",
+            lastName: "Rahman",
+            age: 23,
+            status: "unmarried",
+            myCars: {
+                    car1:"Ford",
+                    car2:"BMW",
+                    car3:"Fiat"
+
+            },
+            fullName: function() {
+                return (this.firstName + " " + this.lastName).toUpperCase();
+            }
+        }
+
+        person.profession = "student";
+
+        document.getElementById('demoObject').innerHTML = "My name is "+ person.firstName +" "+ person.lastName + "and I am "+ person.profession
+                                                         + "I have "+ person.myCars.car1 + " car" + " and "+person.fullName();
+
+        let cars = {
+            car1:"Ford",
+            car2:"BMW",
+            car3:"Fiat"
+        };
+
+        let text = " ";
+
+        for ( let x in cars){
+            text += cars[x]+" "
+        };
+
+        document.getElementById('demoLoopObject').innerHTML = text;
+
+
+
+    </script>
+
+</body>
+</html>
