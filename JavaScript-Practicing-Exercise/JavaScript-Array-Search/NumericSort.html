@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for numeric sorting</title>
+</head>
+<body>
+
+    <p> Usually sort is useful for string value, not for number, if we want to use it then we need a function for handling it.</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        const number = [12, 34, 56, 2, 1, 23];
+
+        document.getElementById("demo").innerHTML = "Original array: "+ number + "<br>"
+                                                  + "After Sorting: "+ number.sort(
+                                                                            function(a, b){
+                                                                                 return ( a -b)
+                                                                            });
+
+    </script>
+
+</body>
+</html>
