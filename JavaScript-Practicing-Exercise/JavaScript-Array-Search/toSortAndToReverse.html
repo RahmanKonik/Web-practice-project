@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document of tosort and toreverse method.</title>
+</head>
+<body>
+
+    <p> ToSort and toreverse method </p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        const months = ["January", "April", "June", "March", "Octobar"];
+
+        document.getElementById("demo").innerHTML = "Real array: "+ months + "<br>"
+                                                  + "Result of toSort: " + months.toSorted() + "<br>"
+                                                  + "Result of toReverse: "+ months.toReversed();
+
+    </script>
+
+</body>
+</html>
