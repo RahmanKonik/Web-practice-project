@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for sorting an array in alphabetically and numerically</title>
+</head>
+<body>
+
+    <p>Sorting an array in alphabetically and numerically</p>
+
+    <button onclick="myAlpahabeticallyFunction()"> For Alpahabetically sorting </button>
+
+    <button onclick="myNumericallyFunction()"> For Numerically sorting</button>
+
+
+    <p id="demosorting"></p>
+
+    <script>
+        const number = [23,34,45,1,2,20,100];
+
+        document.getElementById("demosorting").innerHTML = number;
+
+        // alpahabetically sorting
+
+        function myAlpahabeticallyFunction(){
+            number.sort();
+            document.getElementById("demosorting").innerHTML = number;
+        }
+
+        // numerically sorting
+
+        function myNumericallyFunction(){
+            number.sort(function(a, b){ return ( a - b)});
+            document.getElementById("demosorting").innerHTML = number;
+        }
+    </script>
+
+</body>
+</html>
