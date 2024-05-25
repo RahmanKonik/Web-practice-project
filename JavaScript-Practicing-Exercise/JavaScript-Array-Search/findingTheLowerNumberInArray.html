@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for js sort array</title>
+</head>
+<body>
+
+    <p> Finding the lower number in array by using the math.min.apply method</p>
+
+    <p id = "demoMin"></p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        let value = [ 234, 345, 102, 2, 55, 32, 21, -1];
+
+        document.getElementById("demoMin").innerHTML = "The minimum value of "+ value + " is :"+ myMinValue(value) +
+                                                      " and maximum value is "+ myMaxValue(value);
+
+        document.getElementById("demo").innerHTML = "The minimum value of "+ value + " is :"+ myMin(value) +
+                                                      " and maximum value is "+ myMax(value);
+        // make a function to find the minmum value in array.
+
+        function myMinValue(valueArray){
+
+            return Math.min.apply(null, valueArray);
+
+        }
+
+        // make a function to find the maximum value in array.
+
+        function myMaxValue(valueArray){
+
+            return Math.max.apply(null, valueArray);
+
+        }
+
+        // Home made to find the min and max value in an array.
+
+        function myMin(value){
+
+            let length_value = value.length;
+            let min = value[0];
+
+            while( length_value --){
+                if ( value [length_value] < min){
+                    min = value [length_value];
+                }
+            }
+
+            return min;
+
+        }
+
+        function myMax(value){
+
+        let length_value = value.length;
+        let max = value[0];
+
+        while( length_value --){
+            if ( value [length_value] > max){
+                max = value [length_value];
+            }
+        }
+
+        return max;
+
+        }
+
+    </script>
+
+</body>
+</html>
