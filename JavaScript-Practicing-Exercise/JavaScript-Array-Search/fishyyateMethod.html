@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for Fisher Yates method</title>
+</head>
+<body>
+
+    <p> Fisher Yates method</p>
+
+    <button onclick="myFisherYatesFunction()"> Try Fisher Yates Method</button>
+
+    <p id="demoFisherYates"></p>
+
+    <script>
+
+        const number = [2,6,8,90,12,3,23];
+
+        document.getElementById("demoFisherYates").innerHTML = number;
+
+        function myFisherYatesFunction(){
+
+            for ( let i = number.length - 1 ; i > 0 ; i--){ // until i less than zero.
+
+                let j = Math.floor(Math.random() * ( i+1));
+
+                let k = number [i]; // assign the number[i] value in k variable. then number [i] is empty now.
+
+                number[i] = number [j]; // assign the number[j] value in number [j] variable. then number [j] is empty now.
+
+                number [j] = k ; // assign the number[j] value in k variable. then k is empty now.
+
+            }
+
+            document.getElementById("demoFisherYates").innerHTML = number;
+
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>
