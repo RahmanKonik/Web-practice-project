@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for js foreach loop</title>
+</head>
+<body>
+
+    <p> Exercise of foreach method</p>
+
+    <p id="demo"></p>
+
+    <p id="demoMap"></p>
+
+    <p id="demoFlat"></p>
+
+    <p id="demofilter"></p>
+
+    <script>
+        let values = [1,2,3,4,5];
+
+        let text = " ";
+
+        values.forEach(myFunction);
+
+        document.getElementById("demo").innerHTML = text;
+
+        // map method
+
+        let values1 = values.map(myMapfunction);
+
+        document.getElementById("demoMap").innerHTML ="the result of map: "+ values1;
+
+        // flatmap()
+
+        let values2 = values.flatMap((x) => x * 3);
+
+        document.getElementById("demoFlat").innerHTML ="the result of flatmap: "+ values2;
+
+        // fliter()
+
+        let value3 = values2.filter(myFliterFunction);
+
+        document.getElementById("demofilter").innerHTML = "the result of filtermap: "+ value3; // three element
+
+
+        function myFunction(value, index, array){ // does not need to use the index and array as a parameter, it works as same as if we put the value parameter just.
+
+            text += value + "<br>";
+
+        }
+
+        function myMapfunction(value, index, array){
+            return value * 2;
+        }
+
+        function myFliterFunction(value, index, array){
+            return  value > 6;
+        }
+    </script>
+
+</body>
+</html>
