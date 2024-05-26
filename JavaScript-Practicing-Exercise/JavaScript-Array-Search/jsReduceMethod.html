@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for js reduce Method</title>
+</head>
+<body>
+
+    <p> JavaScript reduce Method</p>
+
+    <p id="demoReduce"></p>
+
+    <script>
+
+        let numbers = [2, 4, 7, 2, 3, 1];
+
+        let sum = numbers.reduce(myFunction, 100); // try to without inital value, 100.
+
+        document.getElementById("demoReduce").innerHTML = " result of reduce method (sum) "+ sum;
+
+        function myFunction(total, value){
+
+            return total + value ;
+        }
+    </script>
+
+</body>
+</html>
