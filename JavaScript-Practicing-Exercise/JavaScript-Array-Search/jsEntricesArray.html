@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for js entrices</title>
+</head>
+<body>
+
+    <p> JavaScript Arrya Entrices</p>
+
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+    <script>
+
+        let fruits = ["Mango", "Apple", "Waterlemon", "Organe"];
+
+        let fruits_level = fruits.entries();
+
+        let new_fruits = fruits.with(2, "Banana");
+
+        document.getElementById("demo2").innerHTML = new_fruits;
+
+        for ( let x of fruits_level){
+
+            document.getElementById("demo").innerHTML += x + "<br>";
+        }
+
+    </script>
+
+</body>
+</html>
