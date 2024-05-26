@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for every method</title>
+</head>
+<body>
+
+
+    <p> JavaScript every method</p>
+
+    <p id="demoEvery"></p>
+
+    <p id="demoSome"></p>
+
+    <script>
+        let number = [1,2,3,4,5];
+
+        let result = number.every(myfunction);
+
+        document.getElementById("demoEvery").innerHTML = " result is : "+ result; // result will be false, it gives the boolean result.
+
+        let result1 = number.some(myfunction);
+
+        document.getElementById("demoSome").innerHTML = " result is : "+ result1; // result will be false, it gives the boolean result.
+
+        function myfunction(value){
+
+            return value > 2;
+        }
+
+        function myfunction(value){
+
+            return value > 2;
+        }
+
+    </script>
+
+</body>
+</html>
