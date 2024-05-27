@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for js date parse</title>
+</head>
+<body>
+
+    <p> Javascript Date parse method </p>
+
+    <p id="demo"></p>
+
+    <p id="demotest"></p>
+
+    <script>
+
+        const myBrithDateMS = Date.parse("June 13, 1996");
+
+        const date = new Date(myBrithDateMS);
+
+        document.getElementById("demo").innerHTML = "Spending time(ms): "+ myBrithDateMS;
+
+        document.getElementById("demotest").innerHTML = " Date: "+ date;
+
+    </script>
+
+</body>
+</html>
