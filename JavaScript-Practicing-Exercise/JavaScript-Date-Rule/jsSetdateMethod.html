@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for js set date method</title>
+</head>
+<body>
+
+    <p> Javascript Set date Method</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        const date = new Date();
+
+        date.setFullYear(1996);
+
+        date.setMonth(5);
+
+        date.setDate(13);
+
+        /*
+
+        also we can set the day, time , minutes, second and milliseconds.
+        */
+
+        document.getElementById("demo").innerHTML = "Set the year : "+date + "<br>";
+    </script>
+
+</body>
+</html>
