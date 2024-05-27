@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for date object</title>
+</head>
+<body>
+
+    <p> Javascript Date object</p>
+
+    <p id = "demo" style="text-align: center;"></p>
+
+    <script>
+
+        const date = new Date();
+
+        document.getElementById("demo").innerHTML = " Today : "+ date + "<br>"
+                                                    + " full year : "+ date.getFullYear() + "<br>"
+                                                    + " Month : "+date.getMonth() + "<br>"
+                                                    + " Day : "+date.getDay() + "<br>"
+                                                    + " Time : "+ date.getTime() + "<br>"
+                                                    + " Minutes : "+ date.getMinutes() + "<br>"
+                                                    + " Second : "+ date.getSeconds() + "<br>"
+                                                    + " ToDateString format : "+ date.toDateString()+ "<br>"
+                                                    + " ToUTCString format : "+ date.toUTCString()+ "<br>"
+                                                    + " ToISOString format : "+ date.toISOString()+ "<br>"
+                                                    + " .";
+    </script>
+
+</body>
+</html>
