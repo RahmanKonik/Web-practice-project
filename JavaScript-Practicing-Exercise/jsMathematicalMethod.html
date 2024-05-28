@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for mathematical terms</title>
+</head>
+<body>
+
+    <p> Javascript mathematical terms </p>
+
+    <p>
+        math.pow();
+        math.abs();
+        math.sqrt();
+        math.sin();
+        math.cos();
+        math.min();
+        math.max();
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        document.getElementById("demo").innerHTML ="The result of pow(): "+ Math.pow(8, 2) + "<br>" // result will be 64
+                                                  +"The result of abs(): "+ Math.abs(5.7) + "<br>" // result will be 4.7, always returns a positive number
+                                                  +"The result of sqrt(): "+ Math.sqrt(64) + "<br>" // result will be 8
+                                                  +"The result of sin(): "+ Math.sin( 90 * Math.PI / 180) + "<br>" // 1
+                                                  +"The result of cos(): "+ Math.cos(1 * Math.PI / 180) + "<br>" // 1 or something 0.99898...
+                                                  +"The result of min(): "+ Math.min(0, 150, 30, 20, -8, -200) + "<br>" // result will be -200
+                                                  +"The result of max(): "+ Math.max(0, 150, 30, 20, -8, -200); // result will be 150
+
+    </script>
+
+</body>
+</html>
