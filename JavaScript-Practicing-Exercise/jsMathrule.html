@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for js math rule</title>
+</head>
+<body>
+
+    <p> Javascript Math methods</p>
+
+    <p>
+        math.round()- rounded to nearest to integer number.
+        math.ecil()- rounded up to integer number
+        math.floor()- rounded down to integer number
+        math.trunc(x)- rounded of integer part of x.
+    </p>
+
+    <p id = "demo"></p>
+
+    <script>
+
+        document.getElementById("demo").innerHTML = "Result of round() :"+ Math.round(4.5)+" , "+ Math.round(4.2)+" , "+ Math.round(4.7)+" , "+ Math.round(-4.5) + "<br>"
+                                                  + "Result of ceil() :"+ Math.ceil(4.5)+" , "+ Math.ceil(4.2)+" , "+ Math.ceil(4.7)+" , "+ Math.ceil(-4.5)+ "<br>"
+                                                  + "Result of floor() :"+ Math.floor(4.5)+" , "+ Math.floor(4.2)+" , "+ Math.floor(4.7)+" , "+ Math.floor(-4.5)+ "<br>"
+                                                  + "Result of trunc() :"+ Math.trunc(4.5)+" , "+ Math.trunc(4.2)+" , "+ Math.trunc(4.7)+" , "+ Math.trunc(-4.5);
+    </script>
+
+</body>
+</html>
