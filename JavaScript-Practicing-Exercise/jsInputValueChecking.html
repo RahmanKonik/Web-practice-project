@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for ternary document</title>
+</head>
+<body>
+
+    <p> javasercipt Ternary document</p>
+
+    <input id="Inputvalue" value="10"/>
+
+    <button onclick="myInputChecking()"> try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+
+        function myInputChecking(){
+
+            let age = Number(document.getElementById("Inputvalue").value);
+
+            let status;
+
+            if (isNaN(age)){ // isNaN function to check whether a given value is illegel number or not
+                status = "Input is not a number";
+            } else {
+                status = (age > 18 ) ? "Young boy": " adult Boy";
+            }
+
+            document.getElementById("demo").innerHTML = status;
+
+       }
+
+    </script>
+
+</body>
+</html>
