@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for if... else</title>
+</head>
+<body>
+
+    <p> javasercipt for if... else</p>
+
+    <p> Giving the greeting message</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        let hours = new Date().getHours();
+
+        let greeting;
+
+        if ( hours < 10){
+
+            greeting = "Good Morning";
+
+        } else if (hours < 18) {
+
+            greeting = "Good day";
+
+        } else {
+
+            greeting = "Good Evening";
+        }
+
+        document.getElementById("demo").innerHTML = greeting; // try to change the variable, display the hours.
+    </script>
+
+</body>
+</html>
