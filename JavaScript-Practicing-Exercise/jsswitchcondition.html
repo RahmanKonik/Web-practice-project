@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for switch statement</title>
+</head>
+<body>
+
+    <p> javasercipt switch statement</p>
+
+    <p> finding the current by using the switch statement</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        let days = new Date().getDay();
+
+        let Day;
+
+        switch (days){
+
+            case 1:
+                Day = "Monday";
+                break;
+            case 2:
+                Day = "Tuesday";
+                break;
+            case 3:
+                Day = "Wednesday";
+                break;
+            case 4:
+                Day = "Thursday";
+                break;
+            case 5:
+                Day = "Friday";
+                break;
+            case 6:
+                Day = "Saturday";
+                break;
+            case 0:
+                Day = "Sunday";
+                break;
+            default:
+                Day = "Looking forwwrd to the weekend.";
+        }
+
+        document.getElementById("demo").innerHTML = "Today is "+Day;
+    </script>
+
+
+
+</body>
+</html>
