@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for ? method</title>
+</head>
+<body>
+
+    <p> javasercipt ternary method</p>
+
+    <input id="age", value="20"/>
+
+    <button onclick="myAgeStatus()">try me</button>
+
+    <p id="demo"></p>
+
+    <script>
+
+        function myAgeStatus(){
+
+            let Age = document.getElementById("age").value;
+
+            let ageStatus = ( Age > 20) ? "Need to Married Now": " Need to improve your career! ";
+
+            document.getElementById("demo").innerHTML = ageStatus;
+
+        }
+    </script>
+
+</body>
+</html>
