@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for iterables</title>
+</head>
+<body>
+
+    <p> javasercipt iterables</p>
+
+    <p> Hand made iterable</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        function myNumber(){
+
+            let number = 0;
+            return {
+                next: function (){
+                    number += 10;
+                    return { value:number, done: false}
+                }
+            };
+        }
+
+        // create iterable
+
+        const number = myNumber();
+
+        number.next();
+        number.next();
+        number.next();
+        number.next();
+
+        document.getElementById("demo").innerHTML = number.next().value;
+
+    </script>
+
+</body>
+</html>
