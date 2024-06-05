@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for javasercipt iterator object</title>
+</head>
+<body>
+
+    <p> javasercipt Itrator Object</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        // create an empty object
+
+        myValue = {};
+
+        // make this object a iterable
+
+        myValue[Symbol.iterator] = function(){
+
+            let number = 0;
+            done = false;
+
+            return {
+                next(){
+                    number += 10;
+                    if( number == 100) { done = true}
+                    return{
+                        value: number, done:done
+                    };
+                }
+            };
+        }
+
+        let text = "";
+
+        for ( const n of myValue){
+            text += n + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text; // displaing the 10...90
+
+
+    </script>
+
+</body>
+</html>
