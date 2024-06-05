@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for set and add property</title>
+</head>
+<body>
+
+    <p> javasercipt Set and Add property</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        // create a set and add value
+
+        const letters = new Set(["K", "O", "N"]);
+
+        letters.add("I");
+        letters.add("K");
+
+        //displaying the size of letters variable.
+
+        document.getElementById("demo").innerHTML = "The size of letters is : "+ letters.size +" values"; // there has same letter that is why
+
+    </script>
+
+</body>
+</html>
