@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set and forEach</title>
+</head>
+<body>
+
+    <h1> javasercipt Set and forEach method</h1>
+
+    <p id="demo"></p>
+
+    <script>
+
+        // create a set
+
+        const letters = new Set(["a", "b", "c"]);
+
+        // add new one
+
+        letters.add("d");
+        let text =" ";
+
+        letters.forEach (function(value){
+
+            text += value +"<br>";
+
+        })
+
+        document.getElementById("demo").innerHTML =text;
+
+    </script>
+
+
+
+</body>
+</html>
