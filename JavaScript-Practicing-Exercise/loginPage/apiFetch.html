@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Fetch Example</title>
+</head>
+<body>
+
+    <!--
+        Page heading
+    -->
+    <h1>Weather Data Fetch Example</h1>
+
+    <!--
+        input tag where user input the city name,
+    -->
+    <input type="text" id="city-input" placeholder="Enter city name">
+
+    <!--
+        By this button, user call the js function for showing the weather data.
+    -->
+    <button onclick="fetchWeatherData()">Get Weather</button>
+
+    <!--
+        create div container with id to see the weather.
+    -->
+
+    <div id="weather-container"></div>
+
+    <script>
+
+
+        const apiKey = 'b63e0458a924de89777e8510f487c296'; // my OpenWeatherMap account API key
+
+        // Function to fetch weather data from the API
+        async function fetchWeatherData() {
+
+            // create a variable and taking the from input tag inside html tag
+
+            const city = document.getElementById('city-input').value;
+
+            // a variable for store api url
+
+            const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+
+            // error handling try... catch property
+
+            try {
+                const response = await fetch(apiURL); // call the apiURL variable
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json(); // taking the data from response variable
+                displayWeatherData(data); // call the displayWeatherdate function for showing the data with passing the data parameter
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
+        // Function to display weather data in the HTML
+
+        function displayWeatherData(data) {
+            const container = document.getElementById('weather-container');
+            container.innerHTML = `
+                <h2>Weather in ${data.name}</h2>
+                <p>Temperature: ${(data.main.temp - 273.15).toFixed(2)} °C</p>
+                <p>Weather: ${data.weather[0].description}</p>
+                <p>Humidity: ${data.main.humidity}%</p>
+                <p>Wind Speed: ${data.wind.speed} m/s</p>
+            `;
+        }
+    </script>
+</body>
+</html>
