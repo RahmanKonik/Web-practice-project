@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student API Testing </title>
+</head>
+<body>
+
+    <h1> Student dummy API Testing </h1>
+
+    <button onclick="Student_data()"> See information</button>
+
+    <div id="container-student"></div>
+
+    <script>
+
+        async function Student_data() {
+
+            const apiURL = `https://freetestapi.com/api/v1/students`;
+
+            // try...catch handling
+
+            try {
+
+                const response = await fetch(apiURL);
+
+                if(!response.ok){
+                    throw new error("Network is not okay");
+                }
+
+                const data= await response.json();
+                displayStudent(data);
+
+            } catch (error) {
+
+                console.error("There is a  problem in fetching the data, ", error);
+
+            }
+
+        }
+
+        function displayStudent(data){
+
+            const container = document.getElementById("container-student");
+
+            container.innerHTML = " ";
+
+            data.forEach(student => {
+                const studentdiv =  document.createElement("div");
+                studentdiv.innerHTML = `
+                <h1>${student.name}</h1>
+                <p>Age: ${student.age}</p>
+                <p>Gender: ${student.gender}</p>
+                <p>GPA: ${student.gpa}</p>
+                <p> Email: ${student.email}</p>
+                <p> Phone: ${student.phone}</p>
+                <p> Course:${student.courses}</p>
+                <p> Image:${student.image}</p>
+                <p> Address:${student.address.city}</p>
+                `;
+                container.appendChild(studentdiv);
+            });
+        }
+
+    </script>
+
+</body>
+</html>
