@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for js map with set property</title>
+</head>
+<body>
+
+    <p> JavaScript map with set method </p>
+
+    <p> adding the values one by one in set method</p>
+
+    <p id="map-set-method"></p>
+
+    <script>
+
+        // create an map
+
+        const fruits = new Map();
+
+        // adding value by set() method.  Not need to use three blacket inside of first blacket.
+
+        fruits.set("Mango",500);
+        fruits.set("Apples",600);
+        fruits.set("Organe", 700);
+
+        // get value
+
+        let value = fruits.get("Mango");
+
+        // displaying it.
+
+        document.getElementById("map-set-method").innerHTML = "The value is "+ value + ".";
+    </script>
+
+</body>
+</html>
