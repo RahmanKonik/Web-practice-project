@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document for JavaScript Map property</title>
+</head>
+<body>
+
+    <p> JavaScript Map Property with an array.</p>
+
+    <p id="map-method"></p>
+
+    <script>
+
+        // array
+
+        const fruits  = new Map([
+            ["Mango", 500],
+            ["Apple", 600],
+            ["Organe", 700],
+            ["Watermelon", 800],
+        ]);
+
+        // variable with get method
+
+        let value = fruits.get("Apple");
+
+        //display
+
+        document.getElementById("map-method").innerHTML = "The value  is "+value+ " apple.";
+
+
+    </script>
+
+</body>
+</html>
