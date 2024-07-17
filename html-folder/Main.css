@@ -1,0 +1,46 @@
+
+a:link, a:visited{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: inline-block;
+    text-align: center;
+}
+
+a:hover{
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active{
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: inline-block;
+}
+
+p:hover{
+
+    color: red;
+    text-decoration: underline;
+    background-color: transparent;
+
+}
+
+p:active{
+
+    color: yellow;
+    text-decoration: underline;
+    background-color: transparent;
+
+}
