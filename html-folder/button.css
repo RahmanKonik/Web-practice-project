@@ -1,0 +1,14 @@
+
+p {
+    color: white;
+    padding: 10px 15px;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+p:hover, p:active{
+    color: red;
+}
