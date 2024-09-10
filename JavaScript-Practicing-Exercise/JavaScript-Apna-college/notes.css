@@ -1,0 +1,23 @@
+
+body{
+    font-family: arial, sans-serif;
+    margin: 1;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+
+  }
+
+.title-tr{
+    background-color: lightgreen;
+}
+
+.total-container{
+    background-color: green;
+}
+
+.xps-container{
+    background-color: yellow;
+}
